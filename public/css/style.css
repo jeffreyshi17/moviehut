@@ -1,0 +1,28 @@
+#container {
+    margin: 40px auto;
+    max-width: 1200px;
+    color: #444;
+    padding: 0 10px
+}
+
+.img-wrap .close {
+    position: absolute;
+    top: 2px;
+    right: 17px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 5px 2px 2px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .2;
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.img-wrap:hover .close {
+    opacity: 1;
+}

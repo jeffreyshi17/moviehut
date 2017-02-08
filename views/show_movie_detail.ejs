@@ -1,0 +1,16 @@
+
+<% include partials/header %>
+		<h1>The Movie Hut</h1>
+		<br>
+		
+		<h2><%= movie.title %></h2>
+		<img src='<%= movie.poster %>' height="200" width ="150">
+		<% Object.keys(movie).forEach(function(key){ %>
+			<% if(key!='id' && key!='poster'){ %>
+				<h3><%= key %>: <%= movie[key] %></h3>
+			<% } %>
+		<% }); %>
+		<a href="/movies">Return to List</a>
+		
+
+<% include partials/footer %>
